@@ -32,7 +32,7 @@ const endplay=()=>
 
     let speed=Math.round(wordCount/totalTime)*60;
 
-    let finalMsg="you typed total at " + speed + " words per minutes ";
+    let finalMsg="you typed total at " + speed + " words per minutes" +". " ;
     finalMsg += comparewords(msg.innerText,totalStr);
     msg.innerText=finalMsg;
 }
@@ -52,7 +52,7 @@ const comparewords=(str1,str2)=>
    });
 
    let errorwords=words1.length-count;
-   return (count + " correct out of" + words1.length + " words and the total number of error are " +errorwords+ ".");
+   return (count + " correct out of " + words1.length + " words and the total number of error are " +errorwords+ ".");
 }
 const wordCounter=(str)=>
 {
