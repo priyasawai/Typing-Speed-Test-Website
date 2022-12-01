@@ -45,4 +45,9 @@ textarea{
     background: #ecf0f1;
     font-size: 1rem;
     margin-top: 10px;
+    cursor: pointer;
+}
+.mainbtn:hover{
+    background-color: palevioletred;
+    color:black
 }
